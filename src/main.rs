@@ -5,7 +5,7 @@ use std::io::{Write, Read};
 use glib::clone;
 
 fn main() {
-    let application = Application::new(Some("com.example.SimpleTextEditor"), Default::default());
+    let application = Application::new(Some("de.beklauter.SimpleTextEditor"), Default::default());
 
     application.connect_activate(|app| {
         let window = ApplicationWindow::builder()
